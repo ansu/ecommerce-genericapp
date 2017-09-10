@@ -21,6 +21,8 @@ enum NetworkAPIError: Error, CustomStringConvertible {
         switch self {
         case .invalidData: return "Received an invalid response"
         case .invalidURL: return "URL is not valid"
+        case .responseUnsuccessful: return "Received an invalid response"
+        case .jsonParsingFailure: return "Sorry, there was an error in url."
         default: return "Unkown error occurred"
         }
     }
