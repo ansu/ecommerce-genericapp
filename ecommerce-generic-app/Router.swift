@@ -6,23 +6,30 @@
 //  Copyright © 2017 Ansu. All rights reserved.
 //
 
-import Foundation
 
 import UIKit
 
-class Router {
+final class Router {
     //MARK: - Private
+    var navigationController: UINavigationController
     private let application: Application
-    private let window: UIWindow
+    
     //MARK: - Lifecycle
     init(window: UIWindow, application: Application) {
+        self.navigationController = UINavigationController()
         self.application = application
-        self.window = window
+        self.navigationController.setNavigationBarHidden(true, animated: true)
+        self.start()
+        window.rootViewController = self.navigationController
+        window.makeKeyAndVisible()
     }
     
-    //    //MARK: - Public
+   //MARK: - Public
     func start() {
-                
+        let viewModel = HomePageViewModel()
+        let instance = UIStoryboard.mainStoryboard?.instantiateVC(HomePageVC.self)
+        //instance?.viewModel = viewModel
+        self.navigationController = UINavigationController(rootViewController: instance!)
     }
     
 }

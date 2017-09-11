@@ -241,7 +241,6 @@ extension UIFont {
     }
     
     
-    
     static func UltraLargeText() -> UIFont {
         return UIFont(name: "Raleway-Regular", size: FontSize.twentyEight)!
     }
@@ -281,9 +280,6 @@ extension UIFont {
     }
     
     
-    // Font Icon
-    static func FontIcon(ofSize size: CGFloat) -> UIFont {
-        return UIFont(name: "icomoon", size: size)!
-    }
+
 }
 

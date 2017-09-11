@@ -38,6 +38,13 @@
 		88569E1A1F661618005B3A38 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88569E191F661618005B3A38 /* UIFontExtension.swift */; };
 		88569E1C1F6616A9005B3A38 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88569E1B1F6616A9005B3A38 /* UIDeviceExtension.swift */; };
 		88569E231F661AC1005B3A38 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88569E221F661AC1005B3A38 /* UIHelper.swift */; };
+		88569E2B1F66211C005B3A38 /* Merriweather-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88569E251F66211C005B3A38 /* Merriweather-Bold.ttf */; };
+		88569E2C1F66211C005B3A38 /* Merriweather-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88569E261F66211C005B3A38 /* Merriweather-Regular.ttf */; };
+		88569E2D1F66211C005B3A38 /* Rawline-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88569E271F66211C005B3A38 /* Rawline-Bold.ttf */; };
+		88569E2E1F66211C005B3A38 /* Rawline-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88569E281F66211C005B3A38 /* Rawline-Light.ttf */; };
+		88569E2F1F66211C005B3A38 /* Rawline-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88569E291F66211C005B3A38 /* Rawline-Medium.ttf */; };
+		88569E301F66211C005B3A38 /* Rawline-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88569E2A1F66211C005B3A38 /* Rawline-Regular.ttf */; };
+		88569E321F66229A005B3A38 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88569E311F66229A005B3A38 /* UIStoryboardExtension.swift */; };
 		92973A01F8A4380E9F790F17 /* Pods_ecommerce_generic_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1205157C2D49E496DCEE292C /* Pods_ecommerce_generic_appUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +107,13 @@
 		88569E191F661618005B3A38 /* UIFontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		88569E1B1F6616A9005B3A38 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
 		88569E221F661AC1005B3A38 /* UIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		88569E251F66211C005B3A38 /* Merriweather-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Bold.ttf"; sourceTree = "<group>"; };
+		88569E261F66211C005B3A38 /* Merriweather-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Regular.ttf"; sourceTree = "<group>"; };
+		88569E271F66211C005B3A38 /* Rawline-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rawline-Bold.ttf"; sourceTree = "<group>"; };
+		88569E281F66211C005B3A38 /* Rawline-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rawline-Light.ttf"; sourceTree = "<group>"; };
+		88569E291F66211C005B3A38 /* Rawline-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rawline-Medium.ttf"; sourceTree = "<group>"; };
+		88569E2A1F66211C005B3A38 /* Rawline-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rawline-Regular.ttf"; sourceTree = "<group>"; };
+		88569E311F66229A005B3A38 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
 		D9BCA3451B438324107647C4 /* Pods_ecommerce_generic_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ecommerce_generic_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0D02BF6FA8909DCE1889BC1 /* Pods-ecommerce-generic-appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecommerce-generic-appTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ecommerce-generic-appTests/Pods-ecommerce-generic-appTests.release.xcconfig"; sourceTree = "<group>"; };
 		E999AE068C72BAAE985BA31A /* Pods-ecommerce-generic-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecommerce-generic-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-ecommerce-generic-app/Pods-ecommerce-generic-app.release.xcconfig"; sourceTree = "<group>"; };
@@ -171,6 +185,7 @@
 		88569DAF1F656C4E005B3A38 /* ecommerce-generic-app */ = {
 			isa = PBXGroup;
 			children = (
+				88569E241F66210F005B3A38 /* Resources */,
 				88569E161F66157A005B3A38 /* Extensions */,
 				88569DE11F656C75005B3A38 /* Storage Layer */,
 				88569DE01F656C6C005B3A38 /* UI Layer */,
@@ -385,8 +400,22 @@
 				88569E171F6615B9005B3A38 /* UIColorExtension.swift */,
 				88569E191F661618005B3A38 /* UIFontExtension.swift */,
 				88569E1B1F6616A9005B3A38 /* UIDeviceExtension.swift */,
+				88569E311F66229A005B3A38 /* UIStoryboardExtension.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		88569E241F66210F005B3A38 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				88569E251F66211C005B3A38 /* Merriweather-Bold.ttf */,
+				88569E261F66211C005B3A38 /* Merriweather-Regular.ttf */,
+				88569E271F66211C005B3A38 /* Rawline-Bold.ttf */,
+				88569E281F66211C005B3A38 /* Rawline-Light.ttf */,
+				88569E291F66211C005B3A38 /* Rawline-Medium.ttf */,
+				88569E2A1F66211C005B3A38 /* Rawline-Regular.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		CA60D225EA1521C3FC6D3D76 /* Frameworks */ = {
@@ -518,12 +547,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88569E2E1F66211C005B3A38 /* Rawline-Light.ttf in Resources */,
 				88569DEB1F656E61005B3A38 /* ReadMeBusinessLayer in Resources */,
+				88569E2F1F66211C005B3A38 /* Rawline-Medium.ttf in Resources */,
 				88569DE91F656E28005B3A38 /* ReadMeUILayer in Resources */,
 				88569DED1F656EAE005B3A38 /* ReadMeStorageLayer in Resources */,
 				88569E111F6613D3005B3A38 /* ErrorView.xib in Resources */,
+				88569E2D1F66211C005B3A38 /* Rawline-Bold.ttf in Resources */,
+				88569E2C1F66211C005B3A38 /* Merriweather-Regular.ttf in Resources */,
+				88569E301F66211C005B3A38 /* Rawline-Regular.ttf in Resources */,
 				88569DE71F656DC9005B3A38 /* ReadMeServiceLayer in Resources */,
 				88569DBB1F656C4E005B3A38 /* LaunchScreen.storyboard in Resources */,
+				88569E2B1F66211C005B3A38 /* Merriweather-Bold.ttf in Resources */,
 				88569DB81F656C4E005B3A38 /* Assets.xcassets in Resources */,
 				88569DB61F656C4E005B3A38 /* Main.storyboard in Resources */,
 			);
@@ -690,6 +725,7 @@
 			files = (
 				88569DFC1F658526005B3A38 /* Application.swift in Sources */,
 				88569DB31F656C4E005B3A38 /* ViewController.swift in Sources */,
+				88569E321F66229A005B3A38 /* UIStoryboardExtension.swift in Sources */,
 				88569E1A1F661618005B3A38 /* UIFontExtension.swift in Sources */,
 				88569E1C1F6616A9005B3A38 /* UIDeviceExtension.swift in Sources */,
 				88569DF61F658377005B3A38 /* HomePage.swift in Sources */,
