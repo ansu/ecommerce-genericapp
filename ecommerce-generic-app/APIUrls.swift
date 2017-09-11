@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+
+enum APIUrls:String {
+    case homePageAPI = "/ValidateIFA"
+    
+    
+    var returnURL: String {
+        return  self.rawValue
+    }
+}

@@ -28,6 +28,16 @@
 		88569DFC1F658526005B3A38 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88569DFB1F658526005B3A38 /* Application.swift */; };
 		88569DFE1F658533005B3A38 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88569DFD1F658533005B3A38 /* Router.swift */; };
 		88569E001F658632005B3A38 /* APIUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88569DFF1F658632005B3A38 /* APIUrls.swift */; };
+		88569E081F661308005B3A38 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88569E071F661308005B3A38 /* HomePageVC.swift */; };
+		88569E0A1F661323005B3A38 /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88569E091F661323005B3A38 /* HomePageViewModel.swift */; };
+		88569E0C1F661340005B3A38 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88569E0B1F661340005B3A38 /* BaseVC.swift */; };
+		88569E101F6613D3005B3A38 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88569E0E1F6613D3005B3A38 /* ErrorView.swift */; };
+		88569E111F6613D3005B3A38 /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88569E0F1F6613D3005B3A38 /* ErrorView.xib */; };
+		88569E151F661469005B3A38 /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88569E141F661469005B3A38 /* MaterialButton.swift */; };
+		88569E181F6615B9005B3A38 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88569E171F6615B9005B3A38 /* UIColorExtension.swift */; };
+		88569E1A1F661618005B3A38 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88569E191F661618005B3A38 /* UIFontExtension.swift */; };
+		88569E1C1F6616A9005B3A38 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88569E1B1F6616A9005B3A38 /* UIDeviceExtension.swift */; };
+		88569E231F661AC1005B3A38 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88569E221F661AC1005B3A38 /* UIHelper.swift */; };
 		92973A01F8A4380E9F790F17 /* Pods_ecommerce_generic_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1205157C2D49E496DCEE292C /* Pods_ecommerce_generic_appUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +90,16 @@
 		88569DFB1F658526005B3A38 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		88569DFD1F658533005B3A38 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		88569DFF1F658632005B3A38 /* APIUrls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIUrls.swift; sourceTree = "<group>"; };
+		88569E071F661308005B3A38 /* HomePageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
+		88569E091F661323005B3A38 /* HomePageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
+		88569E0B1F661340005B3A38 /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		88569E0E1F6613D3005B3A38 /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		88569E0F1F6613D3005B3A38 /* ErrorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ErrorView.xib; sourceTree = "<group>"; };
+		88569E141F661469005B3A38 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
+		88569E171F6615B9005B3A38 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		88569E191F661618005B3A38 /* UIFontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		88569E1B1F6616A9005B3A38 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
+		88569E221F661AC1005B3A38 /* UIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		D9BCA3451B438324107647C4 /* Pods_ecommerce_generic_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ecommerce_generic_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0D02BF6FA8909DCE1889BC1 /* Pods-ecommerce-generic-appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecommerce-generic-appTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ecommerce-generic-appTests/Pods-ecommerce-generic-appTests.release.xcconfig"; sourceTree = "<group>"; };
 		E999AE068C72BAAE985BA31A /* Pods-ecommerce-generic-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecommerce-generic-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-ecommerce-generic-app/Pods-ecommerce-generic-app.release.xcconfig"; sourceTree = "<group>"; };
@@ -151,6 +171,7 @@
 		88569DAF1F656C4E005B3A38 /* ecommerce-generic-app */ = {
 			isa = PBXGroup;
 			children = (
+				88569E161F66157A005B3A38 /* Extensions */,
 				88569DE11F656C75005B3A38 /* Storage Layer */,
 				88569DE01F656C6C005B3A38 /* UI Layer */,
 				88569DDF1F656C63005B3A38 /* Business Layer */,
@@ -206,7 +227,11 @@
 		88569DE01F656C6C005B3A38 /* UI Layer */ = {
 			isa = PBXGroup;
 			children = (
+				88569E121F661421005B3A38 /* Components */,
+				88569E051F6612B4005B3A38 /* Common */,
+				88569E011F661270005B3A38 /* HomePage */,
 				88569DE81F656E28005B3A38 /* ReadMeUILayer */,
+				88569E221F661AC1005B3A38 /* UIHelper.swift */,
 			);
 			name = "UI Layer";
 			sourceTree = "<group>";
@@ -277,6 +302,91 @@
 				88569DF91F65842C005B3A38 /* CommonServiceImpl.swift */,
 			);
 			name = ServiceImpl;
+			sourceTree = "<group>";
+		};
+		88569E011F661270005B3A38 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				88569E041F6612A1005B3A38 /* ViewModels */,
+				88569E031F66128A005B3A38 /* ViewControllers */,
+				88569E021F661283005B3A38 /* Views */,
+			);
+			name = HomePage;
+			sourceTree = "<group>";
+		};
+		88569E021F661283005B3A38 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		88569E031F66128A005B3A38 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				88569E071F661308005B3A38 /* HomePageVC.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		88569E041F6612A1005B3A38 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				88569E091F661323005B3A38 /* HomePageViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		88569E051F6612B4005B3A38 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				88569E0D1F661348005B3A38 /* Views */,
+				88569E061F6612C4005B3A38 /* ViewControllers */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		88569E061F6612C4005B3A38 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				88569E0B1F661340005B3A38 /* BaseVC.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		88569E0D1F661348005B3A38 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		88569E121F661421005B3A38 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				88569E131F661440005B3A38 /* ErrorView */,
+				88569E141F661469005B3A38 /* MaterialButton.swift */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		88569E131F661440005B3A38 /* ErrorView */ = {
+			isa = PBXGroup;
+			children = (
+				88569E0E1F6613D3005B3A38 /* ErrorView.swift */,
+				88569E0F1F6613D3005B3A38 /* ErrorView.xib */,
+			);
+			name = ErrorView;
+			sourceTree = "<group>";
+		};
+		88569E161F66157A005B3A38 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				88569E171F6615B9005B3A38 /* UIColorExtension.swift */,
+				88569E191F661618005B3A38 /* UIFontExtension.swift */,
+				88569E1B1F6616A9005B3A38 /* UIDeviceExtension.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		CA60D225EA1521C3FC6D3D76 /* Frameworks */ = {
@@ -411,6 +521,7 @@
 				88569DEB1F656E61005B3A38 /* ReadMeBusinessLayer in Resources */,
 				88569DE91F656E28005B3A38 /* ReadMeUILayer in Resources */,
 				88569DED1F656EAE005B3A38 /* ReadMeStorageLayer in Resources */,
+				88569E111F6613D3005B3A38 /* ErrorView.xib in Resources */,
 				88569DE71F656DC9005B3A38 /* ReadMeServiceLayer in Resources */,
 				88569DBB1F656C4E005B3A38 /* LaunchScreen.storyboard in Resources */,
 				88569DB81F656C4E005B3A38 /* Assets.xcassets in Resources */,
@@ -579,14 +690,23 @@
 			files = (
 				88569DFC1F658526005B3A38 /* Application.swift in Sources */,
 				88569DB31F656C4E005B3A38 /* ViewController.swift in Sources */,
+				88569E1A1F661618005B3A38 /* UIFontExtension.swift in Sources */,
+				88569E1C1F6616A9005B3A38 /* UIDeviceExtension.swift in Sources */,
 				88569DF61F658377005B3A38 /* HomePage.swift in Sources */,
 				88569DF21F657589005B3A38 /* NetworkProvider.swift in Sources */,
 				88569DFE1F658533005B3A38 /* Router.swift in Sources */,
 				88569DFA1F65842C005B3A38 /* CommonServiceImpl.swift in Sources */,
+				88569E231F661AC1005B3A38 /* UIHelper.swift in Sources */,
 				88569E001F658632005B3A38 /* APIUrls.swift in Sources */,
+				88569E081F661308005B3A38 /* HomePageVC.swift in Sources */,
+				88569E0C1F661340005B3A38 /* BaseVC.swift in Sources */,
+				88569E0A1F661323005B3A38 /* HomePageViewModel.swift in Sources */,
 				88569DF41F657E65005B3A38 /* CommonServiceProtocol.swift in Sources */,
+				88569E181F6615B9005B3A38 /* UIColorExtension.swift in Sources */,
+				88569E101F6613D3005B3A38 /* ErrorView.swift in Sources */,
 				88569DB11F656C4E005B3A38 /* AppDelegate.swift in Sources */,
 				88569DF01F657121005B3A38 /* Network.swift in Sources */,
+				88569E151F661469005B3A38 /* MaterialButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
