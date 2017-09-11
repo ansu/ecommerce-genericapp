@@ -10,7 +10,6 @@
 		20725E2422ABC0D55DC40B04 /* Pods_ecommerce_generic_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D690E73C4AAF733423983B /* Pods_ecommerce_generic_app.framework */; };
 		7EA4C4A7EB34CB4FF7CE6D38 /* Pods_ecommerce_generic_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9BCA3451B438324107647C4 /* Pods_ecommerce_generic_appTests.framework */; };
 		88569DB11F656C4E005B3A38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88569DB01F656C4E005B3A38 /* AppDelegate.swift */; };
-		88569DB31F656C4E005B3A38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88569DB21F656C4E005B3A38 /* ViewController.swift */; };
 		88569DB61F656C4E005B3A38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88569DB41F656C4E005B3A38 /* Main.storyboard */; };
 		88569DB81F656C4E005B3A38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88569DB71F656C4E005B3A38 /* Assets.xcassets */; };
 		88569DBB1F656C4E005B3A38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88569DB91F656C4E005B3A38 /* LaunchScreen.storyboard */; };
@@ -45,6 +44,8 @@
 		88569E2F1F66211C005B3A38 /* Rawline-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88569E291F66211C005B3A38 /* Rawline-Medium.ttf */; };
 		88569E301F66211C005B3A38 /* Rawline-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88569E2A1F66211C005B3A38 /* Rawline-Regular.ttf */; };
 		88569E321F66229A005B3A38 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88569E311F66229A005B3A38 /* UIStoryboardExtension.swift */; };
+		88569E341F664791005B3A38 /* MockNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88569E331F664791005B3A38 /* MockNetworkProvider.swift */; };
+		88569E361F664A52005B3A38 /* HomePage.json in Resources */ = {isa = PBXBuildFile; fileRef = 88569E351F664A52005B3A38 /* HomePage.json */; };
 		92973A01F8A4380E9F790F17 /* Pods_ecommerce_generic_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1205157C2D49E496DCEE292C /* Pods_ecommerce_generic_appUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,7 +75,6 @@
 		62AD29A6DE21F6FAEF60DB79 /* Pods-ecommerce-generic-appUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecommerce-generic-appUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ecommerce-generic-appUITests/Pods-ecommerce-generic-appUITests.release.xcconfig"; sourceTree = "<group>"; };
 		88569DAD1F656C4E005B3A38 /* ecommerce-generic-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ecommerce-generic-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88569DB01F656C4E005B3A38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		88569DB21F656C4E005B3A38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		88569DB51F656C4E005B3A38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88569DB71F656C4E005B3A38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88569DBA1F656C4E005B3A38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -114,6 +114,8 @@
 		88569E291F66211C005B3A38 /* Rawline-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rawline-Medium.ttf"; sourceTree = "<group>"; };
 		88569E2A1F66211C005B3A38 /* Rawline-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rawline-Regular.ttf"; sourceTree = "<group>"; };
 		88569E311F66229A005B3A38 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
+		88569E331F664791005B3A38 /* MockNetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockNetworkProvider.swift; sourceTree = "<group>"; };
+		88569E351F664A52005B3A38 /* HomePage.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HomePage.json; sourceTree = "<group>"; };
 		D9BCA3451B438324107647C4 /* Pods_ecommerce_generic_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ecommerce_generic_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0D02BF6FA8909DCE1889BC1 /* Pods-ecommerce-generic-appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecommerce-generic-appTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ecommerce-generic-appTests/Pods-ecommerce-generic-appTests.release.xcconfig"; sourceTree = "<group>"; };
 		E999AE068C72BAAE985BA31A /* Pods-ecommerce-generic-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecommerce-generic-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-ecommerce-generic-app/Pods-ecommerce-generic-app.release.xcconfig"; sourceTree = "<group>"; };
@@ -192,7 +194,6 @@
 				88569DDF1F656C63005B3A38 /* Business Layer */,
 				88569DDE1F656C59005B3A38 /* Service Layer */,
 				88569DB01F656C4E005B3A38 /* AppDelegate.swift */,
-				88569DB21F656C4E005B3A38 /* ViewController.swift */,
 				88569DB41F656C4E005B3A38 /* Main.storyboard */,
 				88569DB71F656C4E005B3A38 /* Assets.xcassets */,
 				88569DB91F656C4E005B3A38 /* LaunchScreen.storyboard */,
@@ -222,6 +223,7 @@
 		88569DDE1F656C59005B3A38 /* Service Layer */ = {
 			isa = PBXGroup;
 			children = (
+				88569E351F664A52005B3A38 /* HomePage.json */,
 				88569DE61F656DC9005B3A38 /* ReadMeServiceLayer */,
 				88569DE31F656D0F005B3A38 /* External Data services */,
 				88569DE21F656CC5005B3A38 /* Networking */,
@@ -262,10 +264,10 @@
 		88569DE21F656CC5005B3A38 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				88569E371F664E2D005B3A38 /* Providers */,
 				88569DF81F65840C005B3A38 /* ServiceImpl */,
 				88569DF71F6583BB005B3A38 /* Protocols */,
 				88569DEE1F65702E005B3A38 /* Model */,
-				88569DF11F657589005B3A38 /* NetworkProvider.swift */,
 				88569DFF1F658632005B3A38 /* APIUrls.swift */,
 			);
 			name = Networking;
@@ -418,6 +420,15 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		88569E371F664E2D005B3A38 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				88569E331F664791005B3A38 /* MockNetworkProvider.swift */,
+				88569DF11F657589005B3A38 /* NetworkProvider.swift */,
+			);
+			name = Providers;
+			sourceTree = "<group>";
+		};
 		CA60D225EA1521C3FC6D3D76 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -550,6 +561,7 @@
 				88569E2E1F66211C005B3A38 /* Rawline-Light.ttf in Resources */,
 				88569DEB1F656E61005B3A38 /* ReadMeBusinessLayer in Resources */,
 				88569E2F1F66211C005B3A38 /* Rawline-Medium.ttf in Resources */,
+				88569E361F664A52005B3A38 /* HomePage.json in Resources */,
 				88569DE91F656E28005B3A38 /* ReadMeUILayer in Resources */,
 				88569DED1F656EAE005B3A38 /* ReadMeStorageLayer in Resources */,
 				88569E111F6613D3005B3A38 /* ErrorView.xib in Resources */,
@@ -724,9 +736,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				88569DFC1F658526005B3A38 /* Application.swift in Sources */,
-				88569DB31F656C4E005B3A38 /* ViewController.swift in Sources */,
 				88569E321F66229A005B3A38 /* UIStoryboardExtension.swift in Sources */,
 				88569E1A1F661618005B3A38 /* UIFontExtension.swift in Sources */,
+				88569E341F664791005B3A38 /* MockNetworkProvider.swift in Sources */,
 				88569E1C1F6616A9005B3A38 /* UIDeviceExtension.swift in Sources */,
 				88569DF61F658377005B3A38 /* HomePage.swift in Sources */,
 				88569DF21F657589005B3A38 /* NetworkProvider.swift in Sources */,

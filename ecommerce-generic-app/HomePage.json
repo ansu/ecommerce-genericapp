@@ -1,0 +1,50 @@
+{
+    "ReturnCode": 1,
+    "ReturnMsg": "Record Retrieved Successfully",
+    "content": [{
+                "layout_type": "collection",
+                "items": [{
+                          "titile": "Samsung Galaxy No",
+                          "subtitle": "Up to 500 cashback",
+                          "price": "",
+                          "discounted_price": "",
+                          "image": "",
+                          "cell_type": "image",
+                          "id": 1,
+                          "item_type": "category"
+                          
+                          },
+                          {
+                          "titile": "Samsung Galaxy N2",
+                          "subtitle": "Up to 5000 cashback",
+                          "price": "",
+                          "discounted_price": "",
+                          "image": "",
+                          "cell_type": "image",
+                          "id": 2,
+                          "item_type": "item"
+                          }
+                          ],
+                "name": "Bazar Blockbusters"
+                
+                },
+                {
+                
+                "layout_type": "table",
+                "items": [{
+                          "titile": "Samsung Galaxy No",
+                          "subtitle": "Up to 500 cashback",
+                          "price": "",
+                          "discounted_price": "",
+                          "image": "",
+                          "cell_type": "",
+                          "id": 1,
+                          "item_type": "subcategory"
+                          
+                          }],
+                "name": "Vivo Mobiles"
+                
+                
+                }]
+    
+}

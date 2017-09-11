@@ -17,7 +17,7 @@ class Application {
         application: self
     )
 
-    lazy var network = NetworkProvider(session: URLSession.shared)
+   // lazy var network = MockNetworkProvider(session: URLSession.shared)
     lazy var commonServiceAPI = CommonServiceImpl()
 
 

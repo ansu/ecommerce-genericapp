@@ -34,7 +34,6 @@ class NetworkProvider: Network {
                 completion(.Error(.requestFailed))
                 return
             }
-            
             if httpResponse.statusCode == 200 {
                 if let data = data {
                     do {
