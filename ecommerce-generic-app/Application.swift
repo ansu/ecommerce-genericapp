@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class Application {
     
@@ -17,10 +18,12 @@ class Application {
         application: self
     )
 
-   // lazy var network = MockNetworkProvider(session: URLSession.shared)
-    lazy var commonServiceAPI = CommonServiceImpl()
-
-
+    
+    
+    lazy var network = MockNetworkProvider(session: URLSession.shared)
+    lazy var api: CommonServiceProtocol = CommonServiceImpl(network:self.network )
+    
+   
     //    //MARK: - Lifecycle
     init(window: UIWindow) {
         self.window = window

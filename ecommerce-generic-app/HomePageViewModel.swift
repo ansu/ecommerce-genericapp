@@ -29,7 +29,20 @@ class HomePageViewModel {
     //MARK: - Lifeycle
     init(api: CommonServiceProtocol) {
         self.api = api
-       // callSearchAPI()
+        callHomePageAPI()
+    }
+    
+    func callHomePageAPI(){
+        self.api.getHomePageData() { (result) in
+            
+            switch result {
+                case .Success(let data):
+                    print("Success")
+                case .Error(let error):
+                    print(error.description)
+            }
+            
+        }
     }
 
 }
