@@ -15,8 +15,14 @@ protocol HomePageViewModelling {
     var tableItemTypes: [CellRepresentable.Type] { get }
     var tableViewDataSource: [CellRepresentable] { get }
     
+    func callHomePageAPI()
+    
     //MARK: OUTPUT
-    var showErrorView: ((ErrorViewDataType) -> Void)? { get }
+    var showErrorView: ((ErrorViewDataType) -> Void)? { get set }
+    var isLoading : Dynamic<Bool>  { get }
+    var didUpdate: (() -> Void)? { get set}
+    var content :[Content] {get}
+
 }
 
 class HomePageViewModel: HomePageViewModelling {
@@ -24,10 +30,10 @@ class HomePageViewModel: HomePageViewModelling {
     //Mark Input
     private(set) var isLoading : Dynamic<Bool> = Dynamic(false)
    
+    // Mark Output
     var showErrorView: ((ErrorViewDataType) -> Void)?
-    
     var didUpdate: (() -> Void)?
-   // var didSelectIndex: ((SearchItem) -> Void)?
+    
     
     var content :[Content] = [Content]()
    

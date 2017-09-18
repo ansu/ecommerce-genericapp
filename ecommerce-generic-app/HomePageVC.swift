@@ -10,7 +10,7 @@ import UIKit
 
 class HomePageVC: BaseVC {
 
-    var viewModel : HomePageViewModel!
+    var viewModel : HomePageViewModelling!
     
     @IBOutlet weak var tableView: UITableView! {
         didSet {
@@ -29,7 +29,6 @@ class HomePageVC: BaseVC {
         setupBinding()
         viewModel.callHomePageAPI()
         
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
