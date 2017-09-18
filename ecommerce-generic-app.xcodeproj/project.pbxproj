@@ -46,6 +46,8 @@
 		88569E321F66229A005B3A38 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88569E311F66229A005B3A38 /* UIStoryboardExtension.swift */; };
 		88569E341F664791005B3A38 /* MockNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88569E331F664791005B3A38 /* MockNetworkProvider.swift */; };
 		88569E361F664A52005B3A38 /* HomePage.json in Resources */ = {isa = PBXBuildFile; fileRef = 88569E351F664A52005B3A38 /* HomePage.json */; };
+		88F173901F6F7628007AE98F /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F1738F1F6F7628007AE98F /* Dynamic.swift */; };
+		88F173921F6F7E05007AE98F /* CellRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F173911F6F7E05007AE98F /* CellRepresentable.swift */; };
 		92973A01F8A4380E9F790F17 /* Pods_ecommerce_generic_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1205157C2D49E496DCEE292C /* Pods_ecommerce_generic_appUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -116,6 +118,8 @@
 		88569E311F66229A005B3A38 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
 		88569E331F664791005B3A38 /* MockNetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockNetworkProvider.swift; sourceTree = "<group>"; };
 		88569E351F664A52005B3A38 /* HomePage.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HomePage.json; sourceTree = "<group>"; };
+		88F1738F1F6F7628007AE98F /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		88F173911F6F7E05007AE98F /* CellRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellRepresentable.swift; sourceTree = "<group>"; };
 		D9BCA3451B438324107647C4 /* Pods_ecommerce_generic_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ecommerce_generic_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0D02BF6FA8909DCE1889BC1 /* Pods-ecommerce-generic-appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecommerce-generic-appTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ecommerce-generic-appTests/Pods-ecommerce-generic-appTests.release.xcconfig"; sourceTree = "<group>"; };
 		E999AE068C72BAAE985BA31A /* Pods-ecommerce-generic-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecommerce-generic-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-ecommerce-generic-app/Pods-ecommerce-generic-app.release.xcconfig"; sourceTree = "<group>"; };
@@ -359,6 +363,7 @@
 			children = (
 				88569E0D1F661348005B3A38 /* Views */,
 				88569E061F6612C4005B3A38 /* ViewControllers */,
+				88F173911F6F7E05007AE98F /* CellRepresentable.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -403,6 +408,7 @@
 				88569E191F661618005B3A38 /* UIFontExtension.swift */,
 				88569E1B1F6616A9005B3A38 /* UIDeviceExtension.swift */,
 				88569E311F66229A005B3A38 /* UIStoryboardExtension.swift */,
+				88F1738F1F6F7628007AE98F /* Dynamic.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -738,6 +744,7 @@
 				88569DFC1F658526005B3A38 /* Application.swift in Sources */,
 				88569E321F66229A005B3A38 /* UIStoryboardExtension.swift in Sources */,
 				88569E1A1F661618005B3A38 /* UIFontExtension.swift in Sources */,
+				88F173901F6F7628007AE98F /* Dynamic.swift in Sources */,
 				88569E341F664791005B3A38 /* MockNetworkProvider.swift in Sources */,
 				88569E1C1F6616A9005B3A38 /* UIDeviceExtension.swift in Sources */,
 				88569DF61F658377005B3A38 /* HomePage.swift in Sources */,
@@ -752,6 +759,7 @@
 				88569DF41F657E65005B3A38 /* CommonServiceProtocol.swift in Sources */,
 				88569E181F6615B9005B3A38 /* UIColorExtension.swift in Sources */,
 				88569E101F6613D3005B3A38 /* ErrorView.swift in Sources */,
+				88F173921F6F7E05007AE98F /* CellRepresentable.swift in Sources */,
 				88569DB11F656C4E005B3A38 /* AppDelegate.swift in Sources */,
 				88569DF01F657121005B3A38 /* Network.swift in Sources */,
 				88569E151F661469005B3A38 /* MaterialButton.swift in Sources */,

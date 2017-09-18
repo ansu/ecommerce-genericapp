@@ -25,12 +25,12 @@
                           "item_type": "item"
                           }
                           ],
-                "name": "Bazar Blockbusters"
+                "section_title": "Bazar Blockbusters"
                 
                 },
                 {
-                
-                "layout_type": "table",
+                "section_title": ""
+                "layout_type": "list",
                 "items": [{
                           "titile": "Samsung Galaxy No",
                           "subtitle": "Up to 500 cashback",
@@ -41,8 +41,7 @@
                           "id": 1,
                           "item_type": "subcategory"
                           
-                          }],
-                "name": "Vivo Mobiles"
+                          }]
                 
                 
                 }]

@@ -36,7 +36,7 @@ protocol Network {
 
 enum Result <T>{
     case Success(T)
-    case Error(ItunesApiError)
+    case Error(NetworkAPIError)
 }
 
 enum ItunesApiError: Error {
