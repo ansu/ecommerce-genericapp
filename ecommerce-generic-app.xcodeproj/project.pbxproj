@@ -49,6 +49,18 @@
 		88F173901F6F7628007AE98F /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F1738F1F6F7628007AE98F /* Dynamic.swift */; };
 		88F173921F6F7E05007AE98F /* CellRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F173911F6F7E05007AE98F /* CellRepresentable.swift */; };
 		92973A01F8A4380E9F790F17 /* Pods_ecommerce_generic_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1205157C2D49E496DCEE292C /* Pods_ecommerce_generic_appUITests.framework */; };
+		C0C5A31E1F6F82DC00D20AC2 /* ListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C5A31D1F6F82DC00D20AC2 /* ListCellViewModel.swift */; };
+		C0C5A3211F6F833D00D20AC2 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C5A31F1F6F833D00D20AC2 /* ListTableViewCell.swift */; };
+		C0C5A3221F6F833D00D20AC2 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0C5A3201F6F833D00D20AC2 /* ListTableViewCell.xib */; };
+		C0C5A3251F6F84C900D20AC2 /* ListCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C5A3241F6F84C900D20AC2 /* ListCellModel.swift */; };
+		C0C5A32A1F6F869300D20AC2 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C5A3281F6F869300D20AC2 /* CollectionTableViewCell.swift */; };
+		C0C5A32B1F6F869300D20AC2 /* CollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0C5A3291F6F869300D20AC2 /* CollectionTableViewCell.xib */; };
+		C0C5A32D1F6F86E700D20AC2 /* CollectionTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C5A32C1F6F86E700D20AC2 /* CollectionTableCellViewModel.swift */; };
+		C0C5A32F1F6F87B900D20AC2 /* CollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C5A32E1F6F87B900D20AC2 /* CollectionViewModel.swift */; };
+		C0C5A3311F6F87DC00D20AC2 /* CollectionCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C5A3301F6F87DC00D20AC2 /* CollectionCellModel.swift */; };
+		C0C5A3341F6F88D000D20AC2 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C5A3321F6F88D000D20AC2 /* CollectionViewCell.swift */; };
+		C0C5A3351F6F88D000D20AC2 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0C5A3331F6F88D000D20AC2 /* CollectionViewCell.xib */; };
+		C0C5A3371F6F8A0300D20AC2 /* CollectionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C5A3361F6F8A0300D20AC2 /* CollectionCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +132,18 @@
 		88569E351F664A52005B3A38 /* HomePage.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HomePage.json; sourceTree = "<group>"; };
 		88F1738F1F6F7628007AE98F /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		88F173911F6F7E05007AE98F /* CellRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellRepresentable.swift; sourceTree = "<group>"; };
+		C0C5A31D1F6F82DC00D20AC2 /* ListCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCellViewModel.swift; sourceTree = "<group>"; };
+		C0C5A31F1F6F833D00D20AC2 /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		C0C5A3201F6F833D00D20AC2 /* ListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
+		C0C5A3241F6F84C900D20AC2 /* ListCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCellModel.swift; sourceTree = "<group>"; };
+		C0C5A3281F6F869300D20AC2 /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
+		C0C5A3291F6F869300D20AC2 /* CollectionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionTableViewCell.xib; sourceTree = "<group>"; };
+		C0C5A32C1F6F86E700D20AC2 /* CollectionTableCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionTableCellViewModel.swift; sourceTree = "<group>"; };
+		C0C5A32E1F6F87B900D20AC2 /* CollectionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewModel.swift; sourceTree = "<group>"; };
+		C0C5A3301F6F87DC00D20AC2 /* CollectionCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCellModel.swift; sourceTree = "<group>"; };
+		C0C5A3321F6F88D000D20AC2 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		C0C5A3331F6F88D000D20AC2 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		C0C5A3361F6F8A0300D20AC2 /* CollectionCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCellViewModel.swift; sourceTree = "<group>"; };
 		D9BCA3451B438324107647C4 /* Pods_ecommerce_generic_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ecommerce_generic_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0D02BF6FA8909DCE1889BC1 /* Pods-ecommerce-generic-appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecommerce-generic-appTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ecommerce-generic-appTests/Pods-ecommerce-generic-appTests.release.xcconfig"; sourceTree = "<group>"; };
 		E999AE068C72BAAE985BA31A /* Pods-ecommerce-generic-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecommerce-generic-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-ecommerce-generic-app/Pods-ecommerce-generic-app.release.xcconfig"; sourceTree = "<group>"; };
@@ -328,6 +352,7 @@
 		88569E011F661270005B3A38 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				C0C5A3231F6F84BA00D20AC2 /* Model */,
 				88569E041F6612A1005B3A38 /* ViewModels */,
 				88569E031F66128A005B3A38 /* ViewControllers */,
 				88569E021F661283005B3A38 /* Views */,
@@ -338,6 +363,12 @@
 		88569E021F661283005B3A38 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C0C5A31F1F6F833D00D20AC2 /* ListTableViewCell.swift */,
+				C0C5A3201F6F833D00D20AC2 /* ListTableViewCell.xib */,
+				C0C5A3281F6F869300D20AC2 /* CollectionTableViewCell.swift */,
+				C0C5A3291F6F869300D20AC2 /* CollectionTableViewCell.xib */,
+				C0C5A3321F6F88D000D20AC2 /* CollectionViewCell.swift */,
+				C0C5A3331F6F88D000D20AC2 /* CollectionViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -354,6 +385,9 @@
 			isa = PBXGroup;
 			children = (
 				88569E091F661323005B3A38 /* HomePageViewModel.swift */,
+				C0C5A31D1F6F82DC00D20AC2 /* ListCellViewModel.swift */,
+				C0C5A32C1F6F86E700D20AC2 /* CollectionTableCellViewModel.swift */,
+				C0C5A3361F6F8A0300D20AC2 /* CollectionCellViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -433,6 +467,16 @@
 				88569DF11F657589005B3A38 /* NetworkProvider.swift */,
 			);
 			name = Providers;
+			sourceTree = "<group>";
+		};
+		C0C5A3231F6F84BA00D20AC2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C0C5A3241F6F84C900D20AC2 /* ListCellModel.swift */,
+				C0C5A32E1F6F87B900D20AC2 /* CollectionViewModel.swift */,
+				C0C5A3301F6F87DC00D20AC2 /* CollectionCellModel.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		CA60D225EA1521C3FC6D3D76 /* Frameworks */ = {
@@ -569,9 +613,12 @@
 				88569E2F1F66211C005B3A38 /* Rawline-Medium.ttf in Resources */,
 				88569E361F664A52005B3A38 /* HomePage.json in Resources */,
 				88569DE91F656E28005B3A38 /* ReadMeUILayer in Resources */,
+				C0C5A3221F6F833D00D20AC2 /* ListTableViewCell.xib in Resources */,
 				88569DED1F656EAE005B3A38 /* ReadMeStorageLayer in Resources */,
 				88569E111F6613D3005B3A38 /* ErrorView.xib in Resources */,
+				C0C5A3351F6F88D000D20AC2 /* CollectionViewCell.xib in Resources */,
 				88569E2D1F66211C005B3A38 /* Rawline-Bold.ttf in Resources */,
+				C0C5A32B1F6F869300D20AC2 /* CollectionTableViewCell.xib in Resources */,
 				88569E2C1F66211C005B3A38 /* Merriweather-Regular.ttf in Resources */,
 				88569E301F66211C005B3A38 /* Rawline-Regular.ttf in Resources */,
 				88569DE71F656DC9005B3A38 /* ReadMeServiceLayer in Resources */,
@@ -611,7 +658,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		6F7D6BA0C77B1D3265DC6E4B /* [CP] Embed Pods Frameworks */ = {
@@ -686,7 +733,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		CEF0223DFFD5E15752B45A6B /* [CP] Copy Pods Resources */ = {
@@ -731,7 +778,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -741,8 +788,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0C5A3371F6F8A0300D20AC2 /* CollectionCellViewModel.swift in Sources */,
 				88569DFC1F658526005B3A38 /* Application.swift in Sources */,
+				C0C5A3251F6F84C900D20AC2 /* ListCellModel.swift in Sources */,
+				C0C5A31E1F6F82DC00D20AC2 /* ListCellViewModel.swift in Sources */,
 				88569E321F66229A005B3A38 /* UIStoryboardExtension.swift in Sources */,
+				C0C5A32D1F6F86E700D20AC2 /* CollectionTableCellViewModel.swift in Sources */,
 				88569E1A1F661618005B3A38 /* UIFontExtension.swift in Sources */,
 				88F173901F6F7628007AE98F /* Dynamic.swift in Sources */,
 				88569E341F664791005B3A38 /* MockNetworkProvider.swift in Sources */,
@@ -750,14 +801,19 @@
 				88569DF61F658377005B3A38 /* HomePage.swift in Sources */,
 				88569DF21F657589005B3A38 /* NetworkProvider.swift in Sources */,
 				88569DFE1F658533005B3A38 /* Router.swift in Sources */,
+				C0C5A32A1F6F869300D20AC2 /* CollectionTableViewCell.swift in Sources */,
 				88569DFA1F65842C005B3A38 /* CommonServiceImpl.swift in Sources */,
 				88569E231F661AC1005B3A38 /* UIHelper.swift in Sources */,
 				88569E001F658632005B3A38 /* APIUrls.swift in Sources */,
+				C0C5A32F1F6F87B900D20AC2 /* CollectionViewModel.swift in Sources */,
 				88569E081F661308005B3A38 /* HomePageVC.swift in Sources */,
 				88569E0C1F661340005B3A38 /* BaseVC.swift in Sources */,
 				88569E0A1F661323005B3A38 /* HomePageViewModel.swift in Sources */,
+				C0C5A3341F6F88D000D20AC2 /* CollectionViewCell.swift in Sources */,
 				88569DF41F657E65005B3A38 /* CommonServiceProtocol.swift in Sources */,
+				C0C5A3211F6F833D00D20AC2 /* ListTableViewCell.swift in Sources */,
 				88569E181F6615B9005B3A38 /* UIColorExtension.swift in Sources */,
+				C0C5A3311F6F87DC00D20AC2 /* CollectionCellModel.swift in Sources */,
 				88569E101F6613D3005B3A38 /* ErrorView.swift in Sources */,
 				88F173921F6F7E05007AE98F /* CellRepresentable.swift in Sources */,
 				88569DB11F656C4E005B3A38 /* AppDelegate.swift in Sources */,

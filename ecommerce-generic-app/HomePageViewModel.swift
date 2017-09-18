@@ -8,8 +8,14 @@
 
 import Foundation
 
+protocol HomePageViewModelling {
+    
+    // MARK: INPUT
+    var tableItemTypes: [CellRepresentable.Type] { get }
+    var tableViewDataSource: [CellRepresentable] { get }
+}
 
-class HomePageViewModel {
+class HomePageViewModel: HomePageViewModelling {
     
     
     //Mark Input
@@ -23,8 +29,8 @@ class HomePageViewModel {
     private let api: CommonServiceProtocol
     
     //MARK: - Properties
-    //let searchViewModelsTypes: [CellRepresentable.Type] = [SearchCellViewModel.self]
-    //private(set) var searchViewModels = [CellRepresentable]()
+    var tableViewDataSource: [CellRepresentable] = []
+    var tableItemTypes: [CellRepresentable.Type] = [ListCellViewModel.self, CollectionTableCellViewModel.self]
     
     //MARK: - Lifeycle
     init(api: CommonServiceProtocol) {

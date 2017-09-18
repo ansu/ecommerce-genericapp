@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell1" rowHeight="194" id="gZR-x2-ns0" customClass="CollectionTableViewCell" customModule="ecommerce_generic_app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="194"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gZR-x2-ns0" id="VoZ-e4-bGu">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="193.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Vjt-iv-aMr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="194"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="194" id="IMK-eD-KEw"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="nFm-Ub-nLs">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBZ-eP-EcW">
+                        <rect key="frame" x="290" y="72" width="30" height="50"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="8Pm-mK-9XB"/>
+                            <constraint firstAttribute="height" constant="50" id="lc8-q5-hSc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                        <state key="normal" title="&gt;">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xww-Lk-NZT">
+                        <rect key="frame" x="0.0" y="72" width="30" height="50"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="MkG-LA-IDy"/>
+                            <constraint firstAttribute="height" constant="50" id="bIz-o5-zaX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                        <state key="normal" title="&lt;">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tBZ-eP-EcW" firstAttribute="centerY" secondItem="VoZ-e4-bGu" secondAttribute="centerY" id="582-sv-Qmw"/>
+                    <constraint firstAttribute="trailing" secondItem="tBZ-eP-EcW" secondAttribute="trailing" id="T7c-4f-ctH"/>
+                    <constraint firstItem="Vjt-iv-aMr" firstAttribute="top" secondItem="VoZ-e4-bGu" secondAttribute="topMargin" constant="-8" id="a8d-YC-uHa"/>
+                    <constraint firstItem="xww-Lk-NZT" firstAttribute="leading" secondItem="VoZ-e4-bGu" secondAttribute="leading" id="b2I-fQ-xUJ"/>
+                    <constraint firstItem="Vjt-iv-aMr" firstAttribute="leading" secondItem="VoZ-e4-bGu" secondAttribute="leadingMargin" constant="-8" id="ify-uU-RM3"/>
+                    <constraint firstItem="xww-Lk-NZT" firstAttribute="centerY" secondItem="VoZ-e4-bGu" secondAttribute="centerY" id="pDQ-kk-UdS"/>
+                    <constraint firstItem="Vjt-iv-aMr" firstAttribute="centerY" secondItem="VoZ-e4-bGu" secondAttribute="centerY" id="tfQ-ta-0Uy"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Vjt-iv-aMr" secondAttribute="trailing" constant="-8" id="w10-oL-uQP"/>
+                    <constraint firstItem="Vjt-iv-aMr" firstAttribute="centerX" secondItem="VoZ-e4-bGu" secondAttribute="centerX" id="zkt-Zh-FLE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionHeight" destination="IMK-eD-KEw" id="bHO-Qa-Msp"/>
+                <outlet property="collectionView" destination="Vjt-iv-aMr" id="GEk-Zn-rdw"/>
+                <outlet property="leftArrowButton" destination="xww-Lk-NZT" id="TfS-CE-vs5"/>
+                <outlet property="rightArrowButton" destination="tBZ-eP-EcW" id="vWo-id-27T"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="-21"/>
+        </tableViewCell>
+    </objects>
+</document>
