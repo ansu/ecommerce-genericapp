@@ -6,9 +6,9 @@
                 "items": [{
                           "titile": "Samsung Galaxy No",
                           "subtitle": "Up to 500 cashback",
-                          "price": "",
+                          "price": "3000",
                           "discounted_price": "",
-                          "image": "",
+                          "image": "product",
                           "cell_type": "image",
                           "id": 1,
                           "item_type": "category"
@@ -17,9 +17,9 @@
                           {
                           "titile": "Samsung Galaxy N2",
                           "subtitle": "Up to 5000 cashback",
-                          "price": "",
+                          "price": "3000",
                           "discounted_price": "",
-                          "image": "",
+                          "image": "product",
                           "cell_type": "image",
                           "id": 2,
                           "item_type": "item"
@@ -36,7 +36,7 @@
                           "subtitle": "Up to 500 cashback",
                           "price": "500",
                           "discounted_price": "",
-                          "image": "",
+                          "image": "product",
                           "cell_type": "",
                           "id": 1,
                           "item_type": "subcategory"

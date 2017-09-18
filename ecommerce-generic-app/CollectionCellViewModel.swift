@@ -14,6 +14,10 @@ protocol CollectionCellViewModelling {
     // MARK: INPUT
     
     // MARK: OUTPUT
+    func getTitle() -> String?
+    func getSubTitle() -> String?
+    func getPrice() -> String?
+    func getImage() -> UIImage?
 }
 
 class CollectionCellViewModel: CollectionCellViewModelling {
@@ -23,6 +27,24 @@ class CollectionCellViewModel: CollectionCellViewModelling {
     init(model: Item) {
         self.model = model
     }
+    
+    func getTitle() -> String? {
+        return self.model.titile
+    }
+    
+    func getSubTitle() -> String? {
+        return self.model.subtitle
+    }
+    
+    func getPrice() -> String? {
+        return self.model.price
+    }
+    
+    func getImage() -> UIImage? {
+        return UIImage.init(named: self.model.image ?? "product")
+    }
+ 
+    
 }
 
 

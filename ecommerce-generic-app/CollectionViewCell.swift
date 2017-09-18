@@ -34,7 +34,11 @@ class CollectionViewCell: UICollectionViewCell {
         }
     }
     
-    var viewModel: CollectionCellViewModelling!
+    var viewModel: CollectionCellViewModelling! {
+        didSet {
+            setData()
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -45,5 +49,10 @@ class CollectionViewCell: UICollectionViewCell {
         self.viewModel = viewModel
     }
     
-
+    func setData() {
+        self.title.text = viewModel.getTitle()
+        self.subTitle.text = viewModel.getSubTitle()
+        self.productImage.image = viewModel.getImage()
+        self.price.text = viewModel.getPrice()
+    }
 }
