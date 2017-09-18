@@ -11,6 +11,19 @@ import UIKit
 
 protocol CellRepresentable {
     static func registerCell(tableView: UITableView)
-    func cellInstance(tableView: UITableView, indexPath: NSIndexPath) -> UITableViewCell
+    func cellInstance(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell
     func cellSelected()
+}
+
+protocol collectionCellRepresentable {
+    
+    static func registerCell(collectionView: UICollectionView)
+    func cellInstance(collectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell
+}
+
+extension CellRepresentable {
+    
+    func cellSelected() -> Void {
+        
+    }
 }
