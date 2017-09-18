@@ -48,6 +48,7 @@
 		88569E361F664A52005B3A38 /* HomePage.json in Resources */ = {isa = PBXBuildFile; fileRef = 88569E351F664A52005B3A38 /* HomePage.json */; };
 		88F173901F6F7628007AE98F /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F1738F1F6F7628007AE98F /* Dynamic.swift */; };
 		88F173921F6F7E05007AE98F /* CellRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F173911F6F7E05007AE98F /* CellRepresentable.swift */; };
+		88F173941F6FB7BC007AE98F /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F173931F6FB7BC007AE98F /* UIViewExtension.swift */; };
 		92973A01F8A4380E9F790F17 /* Pods_ecommerce_generic_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1205157C2D49E496DCEE292C /* Pods_ecommerce_generic_appUITests.framework */; };
 		C0C5A31E1F6F82DC00D20AC2 /* ListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C5A31D1F6F82DC00D20AC2 /* ListCellViewModel.swift */; };
 		C0C5A3211F6F833D00D20AC2 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C5A31F1F6F833D00D20AC2 /* ListTableViewCell.swift */; };
@@ -132,6 +133,7 @@
 		88569E351F664A52005B3A38 /* HomePage.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HomePage.json; sourceTree = "<group>"; };
 		88F1738F1F6F7628007AE98F /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		88F173911F6F7E05007AE98F /* CellRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellRepresentable.swift; sourceTree = "<group>"; };
+		88F173931F6FB7BC007AE98F /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		C0C5A31D1F6F82DC00D20AC2 /* ListCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCellViewModel.swift; sourceTree = "<group>"; };
 		C0C5A31F1F6F833D00D20AC2 /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		C0C5A3201F6F833D00D20AC2 /* ListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
@@ -443,6 +445,7 @@
 				88569E1B1F6616A9005B3A38 /* UIDeviceExtension.swift */,
 				88569E311F66229A005B3A38 /* UIStoryboardExtension.swift */,
 				88F1738F1F6F7628007AE98F /* Dynamic.swift */,
+				88F173931F6FB7BC007AE98F /* UIViewExtension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -806,6 +809,7 @@
 				C0C5A31E1F6F82DC00D20AC2 /* ListCellViewModel.swift in Sources */,
 				88569E321F66229A005B3A38 /* UIStoryboardExtension.swift in Sources */,
 				C0C5A32D1F6F86E700D20AC2 /* CollectionTableCellViewModel.swift in Sources */,
+				88F173941F6FB7BC007AE98F /* UIViewExtension.swift in Sources */,
 				88569E1A1F661618005B3A38 /* UIFontExtension.swift in Sources */,
 				88F173901F6F7628007AE98F /* Dynamic.swift in Sources */,
 				88569E341F664791005B3A38 /* MockNetworkProvider.swift in Sources */,

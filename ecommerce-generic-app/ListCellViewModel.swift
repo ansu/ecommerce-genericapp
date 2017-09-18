@@ -44,11 +44,11 @@ class ListCellViewModel: ListCellViewModelling {
 extension ListCellViewModel: CellRepresentable {
     
     static func registerCell(tableView: UITableView) {
-        tableView.register(UINib(nibName: "ListTableViewCell", bundle: nil), forCellReuseIdentifier: "ListTableViewCell")
+        tableView.register(ListTableViewCell.self)
     }
     
     func cellInstance(tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ListTableViewCell", for: indexPath) as! ListTableViewCell
+        let cell : ListTableViewCell = tableView.dequeueReusableCell(indexPath: indexPath)
         cell.prepare(viewModel: self)
         return cell
     }

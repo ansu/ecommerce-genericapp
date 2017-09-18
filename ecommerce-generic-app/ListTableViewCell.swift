@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ListTableViewCell: UITableViewCell {
+class ListTableViewCell: UITableViewCell, NibLoadableView, ReusableView {
 
     @IBOutlet weak var productName: UILabel! {
         didSet {
