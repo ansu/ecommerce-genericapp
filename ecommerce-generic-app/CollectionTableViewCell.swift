@@ -16,7 +16,11 @@ class CollectionTableViewCell: UITableViewCell {
     @IBOutlet weak var rightArrowButton: UIButton!
     @IBOutlet weak var leftArrowButton: UIButton!
     
-    var viewModel: CollectionTableCellViewModelling!
+    var viewModel: CollectionTableCellViewModelling! {
+        didSet {
+            registerCell()
+        }
+    }
     fileprivate var noOfItems : Int = 0
     fileprivate var indexnumber: Int = 0
     
@@ -38,6 +42,15 @@ class CollectionTableViewCell: UITableViewCell {
     
     func prepare(viewModel: CollectionTableCellViewModelling) {
         self.viewModel = viewModel
+    }
+    
+    func registerCell() {
+        
+        self.viewModel.collectionItemTypes.forEach { [unowned self]  in
+            $0.registerCell(collectionView: self.collectionView)
+        }
+        
+        setData()
     }
     
     // Move to next Image
@@ -69,6 +82,10 @@ class CollectionTableViewCell: UITableViewCell {
             leftArrowButton.isHidden = true
         }
     }
+    
+    func setData() {
+        
+    }
 }
 
 
@@ -76,7 +93,8 @@ extension CollectionTableViewCell: UICollectionViewDelegate, UICollectionViewDat
     
     // Return number of rows for each section
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return viewModel.collectionViewDataSource.count
+        self.noOfItems = viewModel.collectionViewDataSource.count
+        return noOfItems
     }
     
     // For each row dispaly cell

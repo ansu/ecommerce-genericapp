@@ -17,7 +17,7 @@ class HomePageVC: BaseVC {
             self.tableView.keyboardDismissMode = UIScrollViewKeyboardDismissMode.interactive
             self.tableView.keyboardDismissMode = UIScrollViewKeyboardDismissMode.onDrag
             tableView.allowsSelection = false
-            tableView.estimatedRowHeight = 200
+            tableView.estimatedRowHeight = 400
             tableView.rowHeight = UITableViewAutomaticDimension
         }
     }
@@ -80,13 +80,6 @@ extension HomePageVC : UITableViewDataSource {
          let viewModel = self.viewModel.tableViewDataSource[indexPath.row]
          let cell = viewModel.cellInstance(tableView: tableView, indexPath: indexPath)
          return cell
-    }
-    
-    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableViewAutomaticDimension
-    }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableViewAutomaticDimension
     }
     
 }

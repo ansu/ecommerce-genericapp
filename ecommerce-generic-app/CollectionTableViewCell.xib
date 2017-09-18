@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -23,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="194"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="194" id="IMK-eD-KEw"/>
+                            <constraint firstAttribute="height" priority="999" constant="194" id="IMK-eD-KEw"/>
                         </constraints>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="nFm-Ub-nLs">
                             <size key="itemSize" width="50" height="50"/>
@@ -59,14 +58,13 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="tBZ-eP-EcW" firstAttribute="centerY" secondItem="VoZ-e4-bGu" secondAttribute="centerY" id="582-sv-Qmw"/>
+                    <constraint firstAttribute="trailing" secondItem="Vjt-iv-aMr" secondAttribute="trailing" id="Kib-Z0-Nch"/>
+                    <constraint firstItem="Vjt-iv-aMr" firstAttribute="leading" secondItem="VoZ-e4-bGu" secondAttribute="leading" id="PlG-14-rTm"/>
                     <constraint firstAttribute="trailing" secondItem="tBZ-eP-EcW" secondAttribute="trailing" id="T7c-4f-ctH"/>
-                    <constraint firstItem="Vjt-iv-aMr" firstAttribute="top" secondItem="VoZ-e4-bGu" secondAttribute="topMargin" constant="-8" id="a8d-YC-uHa"/>
                     <constraint firstItem="xww-Lk-NZT" firstAttribute="leading" secondItem="VoZ-e4-bGu" secondAttribute="leading" id="b2I-fQ-xUJ"/>
-                    <constraint firstItem="Vjt-iv-aMr" firstAttribute="leading" secondItem="VoZ-e4-bGu" secondAttribute="leadingMargin" constant="-8" id="ify-uU-RM3"/>
+                    <constraint firstItem="Vjt-iv-aMr" firstAttribute="top" secondItem="VoZ-e4-bGu" secondAttribute="top" id="l2W-TG-1KK"/>
                     <constraint firstItem="xww-Lk-NZT" firstAttribute="centerY" secondItem="VoZ-e4-bGu" secondAttribute="centerY" id="pDQ-kk-UdS"/>
-                    <constraint firstItem="Vjt-iv-aMr" firstAttribute="centerY" secondItem="VoZ-e4-bGu" secondAttribute="centerY" id="tfQ-ta-0Uy"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="Vjt-iv-aMr" secondAttribute="trailing" constant="-8" id="w10-oL-uQP"/>
-                    <constraint firstItem="Vjt-iv-aMr" firstAttribute="centerX" secondItem="VoZ-e4-bGu" secondAttribute="centerX" id="zkt-Zh-FLE"/>
+                    <constraint firstAttribute="bottom" secondItem="Vjt-iv-aMr" secondAttribute="bottom" id="yXr-IN-Orm"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
