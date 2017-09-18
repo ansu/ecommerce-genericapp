@@ -36,10 +36,13 @@ class HomePageViewModel {
     }
     
     func callHomePageAPI(){
-        self.api.getHomePageData() { (result) in
+        self.isLoading.value = true
+        self.api.getHomePageData() {[weak self] (result) in
+            self?.isLoading.value = false
             switch result {
                 case .Success(let data):
-                    self.content = (data?.content!)!
+                    self?.content = (data?.content!)!
+                    self?.didUpdate?()
                 case .Error(let error):
                     print(error.description)
             }

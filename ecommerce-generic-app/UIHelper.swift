@@ -28,4 +28,11 @@ struct UIHelper {
             button.setTitleColor(titleColor!, for: .normal)
         }
     }
+    
+    static func showAlert(withTitle title:String, controller: UIViewController,description: String, handler: ((UIAlertAction) -> Void)?) {
+        let alertController = UIAlertController(title: title, message: description, preferredStyle: .alert)
+        let defaultAction = UIAlertAction(title: "OK", style: .default, handler: handler)
+        alertController.addAction(defaultAction)
+        controller.present(alertController, animated: true, completion: nil)
+    }
 }
