@@ -10,21 +10,35 @@ import UIKit
 
 class ListTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var productName: UILabel!
+    @IBOutlet weak var productName: UILabel! {
+        didSet {
+           // productName.font = UIFont.boldSystemFont(ofSize: 14)
+        }
+    }
     @IBOutlet weak var productImage: UIImageView!
-    @IBOutlet weak var productPrice: UILabel!
     
-    var viewModel: ListCellViewModelling!
+    @IBOutlet weak var productPrice: UILabel! {
+        didSet {
+           // self.productName.font = UIFont.systemFont(ofSize: 13)
+        }
+    }
+    
+    var viewModel: ListCellViewModelling! {
+        didSet {
+            setData()
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func setData() {
+        productName.text = viewModel.getTitle()
+        productImage.image = viewModel.getImage()
+        productPrice.text = viewModel.getPrice()
+        
     }
     
     func prepare(viewModel: ListCellViewModelling) {

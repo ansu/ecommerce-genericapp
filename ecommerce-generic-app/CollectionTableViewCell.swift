@@ -76,20 +76,15 @@ extension CollectionTableViewCell: UICollectionViewDelegate, UICollectionViewDat
     
     // Return number of rows for each section
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return noOfItems
+        return viewModel.collectionViewDataSource.count
     }
     
     // For each row dispaly cell
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        return UICollectionViewCell()
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-//        let policyCell = cell as! HomePageCollectionView
-//        policyCell.policyImage.image = imageArray[indexPath.row]
-//        policyCell.pageControl.currentPage = indexPath.row
-        
+        let viewModel = self.viewModel.collectionViewDataSource[indexPath.row]
+        let cell = viewModel.cellInstance(collectionView: collectionView, indexPath: indexPath)
+        return cell
     }
 
 }

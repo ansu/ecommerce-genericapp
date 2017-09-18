@@ -17,7 +17,6 @@ protocol HomePageViewModelling {
 
 class HomePageViewModel: HomePageViewModelling {
     
-    
     //Mark Input
     private(set) var isLoading : Dynamic<Bool> = Dynamic(false)
     typealias ErrorViewDataType = (String, (() -> (Void))?)
@@ -42,20 +41,18 @@ class HomePageViewModel: HomePageViewModelling {
     //MARK: - Lifeycle
     init(api: CommonServiceProtocol) {
         self.api = api
+  
     }
     
     func callHomePageAPI(){
-       
-        
         self.isLoading.value = true
-        
-        
-        self.api.getHomePageData() {[weak self] (result) in
-            self?.isLoading.value = false
+        self.api.getHomePageData() {[unowned self] (result) in
+            self.isLoading.value = false
             switch result {
                 case .Success(let data):
-                    self?.content = (data?.content!)!
-                    self?.didUpdate?()
+                    self.content = (data?.content!)!
+                    self.didUpdate?()
+                    self.tableViewDataSource = self.getData()
                 case .Error(let error):
                     print(error.description)
 //                    self?.showErrorView?((error.description, retryClosure:{
@@ -64,8 +61,32 @@ class HomePageViewModel: HomePageViewModelling {
             }
             
         }
+    }
+    
+    func getData() -> [CellRepresentable] {
         
-        
+        return (0..<content.count).map { [unowned self] index in
+            
+            let layoutType = self.content[index].layoutType!
+            
+            switch layoutType {
+                case "collection": return self.returnCollectionCellViewModel(index)
+                case "list": return self.returnListViewModel(index)
+                default: return self.returnListViewModel(index)
+            }
+        }
+    }
+    
+    func returnListViewModel(_ index: Int) -> ListCellViewModel {
+        let data = self.content[index].items
+        let items = data?.first
+        let model = ListCellModel.init(productName: items?.titile ?? "", productPrice: items?.price ?? "", productImageUrl: items?.image ?? "")
+        return ListCellViewModel.init(model: model)
+    }
+    
+    func returnCollectionCellViewModel(_ index: Int) -> CollectionTableCellViewModel {
+        let model = CollectionDataModel.init(data: self.content[index].items)
+        return CollectionTableCellViewModel.init(model: model)
     }
 
 }
