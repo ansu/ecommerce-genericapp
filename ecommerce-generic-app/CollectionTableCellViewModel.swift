@@ -13,7 +13,7 @@ protocol CollectionTableCellViewModelling {
     
     // MARK: INPUT
     var collectionItemTypes: [collectionCellRepresentable.Type] { get }
-    var tableViewDataSource: [collectionCellRepresentable] { get }
+    var collectionViewDataSource: [collectionCellRepresentable] { get }
     
     // MARK: OUTPUT
 }
@@ -21,21 +21,25 @@ protocol CollectionTableCellViewModelling {
 class CollectionTableCellViewModel: CollectionTableCellViewModelling {
     
     var collectionItemTypes: [collectionCellRepresentable.Type] = [CollectionCellViewModel.self]
-    var tableViewDataSource: [collectionCellRepresentable] = []
+    var collectionViewDataSource: [collectionCellRepresentable] = []
     
     var model: CollectionDataModel!
     private var numberOfItems: Int!
     init(model: CollectionDataModel) {
         self.model = model
         
-        numberOfItems = self.model.data.count
-        self.tableViewDataSource = getData()
+        numberOfItems = self.model.data?.count ?? 0
+        self.collectionViewDataSource = getData()
     }
     
     func getData() -> [collectionCellRepresentable] {
         
+        guard let data = model.data else {
+            return []
+        }
+        
         return (0..<numberOfItems).map { index in
-            let viewModel = CollectionCellViewModel.init(model: model.data[index])
+            let viewModel = CollectionCellViewModel.init(model: data[index])
             return viewModel
         }
     }

@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -31,8 +30,8 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OjT-XG-UVd">
-                        <rect key="frame" x="51" y="45" width="153" height="67"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OjT-XG-UVd">
+                        <rect key="frame" x="0.0" y="45" width="255" height="67"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="67" id="Tjw-BR-idg"/>
                         </constraints>
@@ -41,7 +40,7 @@
                 <constraints>
                     <constraint firstItem="OjT-XG-UVd" firstAttribute="top" secondItem="4mP-of-jQX" secondAttribute="bottom" constant="8" id="Aqo-R2-twa"/>
                     <constraint firstItem="4mP-of-jQX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="GcA-Jl-Opd"/>
-                    <constraint firstItem="OjT-XG-UVd" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.6" id="MXN-KN-dgn"/>
+                    <constraint firstItem="OjT-XG-UVd" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="MXN-KN-dgn"/>
                     <constraint firstAttribute="trailing" secondItem="LS0-Sa-RUh" secondAttribute="trailing" constant="8" id="Ox3-xC-8EA"/>
                     <constraint firstItem="LS0-Sa-RUh" firstAttribute="top" secondItem="OjT-XG-UVd" secondAttribute="bottom" constant="8" id="ToC-PK-nY5"/>
                     <constraint firstItem="LS0-Sa-RUh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="UKm-19-RWB"/>

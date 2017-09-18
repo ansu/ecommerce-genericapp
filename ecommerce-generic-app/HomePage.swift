@@ -18,7 +18,7 @@ class HomePageModel : Mappable{
     var content : [Content]?
     
     
-    class func newInstance(map: Map) -> Mappable?{
+    class func newInstance(map: Map) -> Mappable? {
         return HomePageModel()
     }
     
@@ -30,12 +30,10 @@ class HomePageModel : Mappable{
         return Mapper<HomePageModel>().map(JSON: dict)! as HomePageModel
     }
   
-    func mapping(map: Map)
-    {
+    func mapping(map: Map) {
         returnCode <- map["ReturnCode"]
         returnMsg <- map["ReturnMsg"]
         content <- map["content"]
-        
     }
     
     
@@ -50,7 +48,7 @@ class Content : Mappable{
     var sectionTitle : String?
     
     
-    class func newInstance(map: Map) -> Mappable?{
+    class func newInstance(map: Map) -> Mappable? {
         return Content()
     }
     
@@ -63,12 +61,10 @@ class Content : Mappable{
     }
 
     
-    func mapping(map: Map)
-    {
+    func mapping(map: Map) {
         items <- map["items"]
         layoutType <- map["layout_type"]
         sectionTitle <- map["section_title"]
-        
     }
     
     

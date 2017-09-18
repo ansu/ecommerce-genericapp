@@ -10,26 +10,23 @@ import UIKit
 
 class HomePageVC: BaseVC {
 
-    
     var viewModel : HomePageViewModel!
-
     
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             self.tableView.keyboardDismissMode = UIScrollViewKeyboardDismissMode.interactive
             self.tableView.keyboardDismissMode = UIScrollViewKeyboardDismissMode.onDrag
-            
+            tableView.allowsSelection = false
+            tableView.estimatedRowHeight = 200
+            tableView.rowHeight = UITableViewAutomaticDimension
         }
     }
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupViews()
         setupBinding()
         viewModel.callHomePageAPI()
-        
-        
-        
         
         // Do any additional setup after loading the view.
     }
@@ -61,31 +58,28 @@ class HomePageVC: BaseVC {
            // self?.showErrorView(errorMsg: error, retry: retryClosure)
             //self?.viewModelDidError(error: error)
         }
-        
-        
-        
-        
+ 
     }
-
-
+    
+    private func setupViews() {
+        self.viewModel.tableItemTypes.forEach { [unowned self]  in
+            $0.registerCell(tableView: self.tableView)
+        }
+    }
 }
-
 
 extension HomePageVC : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("number of rows \(self.viewModel.content.count) ")
+        print("number of rows \(self.viewModel.content.count)")
         return self.viewModel.content.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-//        //let cellViewModel = self.viewModel.searchViewModels[indexPath.row]
-//        let cell =  cellViewModel.cellInstance(tableView: tableView, indexPath: indexPath as NSIndexPath)
-//        cell.selectionStyle = UITableViewCellSelectionStyle.none
-//        return cell
-        return UITableViewCell()
-        
+         let viewModel = self.viewModel.tableViewDataSource[indexPath.row]
+         let cell = viewModel.cellInstance(tableView: tableView, indexPath: indexPath)
+         return cell
     }
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -98,7 +92,6 @@ extension HomePageVC : UITableViewDataSource {
 }
 
 extension HomePageVC : UITableViewDelegate {
-    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //self.viewModel.searchViewModels[indexPath.row].cellSelected()

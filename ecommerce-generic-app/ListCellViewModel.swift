@@ -14,6 +14,9 @@ protocol ListCellViewModelling {
     // MARK: INPUT
     
     // MARK: OUTPUT
+    func getTitle() -> String
+    func getPrice() -> String
+    func getImage() -> UIImage?
 }
 
 class ListCellViewModel: ListCellViewModelling {
@@ -22,6 +25,18 @@ class ListCellViewModel: ListCellViewModelling {
     
     init(model: ListCellModel) {
         self.model = model
+    }
+    
+    func getTitle() -> String {
+        return model.productName
+    }
+    
+    func getPrice() -> String {
+        return model.productPrice
+    }
+    
+    func getImage() -> UIImage? {
+        return UIImage.init(named: "product")
     }
 }
 

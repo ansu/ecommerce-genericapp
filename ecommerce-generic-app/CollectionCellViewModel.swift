@@ -18,9 +18,9 @@ protocol CollectionCellViewModelling {
 
 class CollectionCellViewModel: CollectionCellViewModelling {
     
-    var model: CollectionCellModel!
+    var model: Item!
     
-    init(model: CollectionCellModel) {
+    init(model: Item) {
         self.model = model
     }
 }

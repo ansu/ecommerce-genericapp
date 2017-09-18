@@ -10,6 +10,6 @@ import Foundation
 
 struct CollectionDataModel {
     
-    var data: [CollectionCellModel]!
+    var data: [Item]?
     
 }
