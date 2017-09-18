@@ -25,6 +25,7 @@ class HomePageVC: BaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.callHomePageAPI()
         
         
         
