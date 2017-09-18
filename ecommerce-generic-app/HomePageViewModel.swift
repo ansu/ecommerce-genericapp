@@ -8,24 +8,25 @@
 
 import Foundation
 
+typealias ErrorViewDataType = ((String, (() -> Void)?))
 protocol HomePageViewModelling {
     
     // MARK: INPUT
     var tableItemTypes: [CellRepresentable.Type] { get }
     var tableViewDataSource: [CellRepresentable] { get }
+    
+    //MARK: OUTPUT
+    var showErrorView: ((ErrorViewDataType) -> Void)? { get }
 }
 
 class HomePageViewModel: HomePageViewModelling {
     
     //Mark Input
     private(set) var isLoading : Dynamic<Bool> = Dynamic(false)
-    typealias ErrorViewDataType = (String, (() -> (Void))?)
    
-    var showErrorView: ErrorViewDataType?
-    var retryClosure: (() -> (Void))?
+    var showErrorView: ((ErrorViewDataType) -> Void)?
     
     var didUpdate: (() -> Void)?
-    var didError: ((Error) -> Void)?
    // var didSelectIndex: ((SearchItem) -> Void)?
     
     var content :[Content] = [Content]()
@@ -37,7 +38,7 @@ class HomePageViewModel: HomePageViewModelling {
     //MARK: - Properties
     var tableViewDataSource: [CellRepresentable] = []
     var tableItemTypes: [CellRepresentable.Type] = [ListCellViewModel.self, CollectionTableCellViewModel.self]
-    
+
     //MARK: - Lifeycle
     init(api: CommonServiceProtocol) {
         self.api = api
@@ -55,12 +56,14 @@ class HomePageViewModel: HomePageViewModelling {
                     self.tableViewDataSource = self.getData()
                 case .Error(let error):
                     print(error.description)
-//                    self?.showErrorView?((error.description, retryClosure:{
-//                        self?.callHomePageAPI()
-//                    }))
+                    self.showErrorView?((error.description, self.retryClosure))
             }
             
         }
+    }
+    
+    func retryClosure() -> Void {
+        self.callHomePageAPI()
     }
     
     func getData() -> [CellRepresentable] {

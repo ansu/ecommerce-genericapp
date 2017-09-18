@@ -54,10 +54,9 @@ class HomePageVC: BaseVC {
         viewModel?.didUpdate = { [weak self] _ in
             self?.tableView.reloadData()
         }
-        viewModel?.didError  = { [weak self] error in
-            
-           // self?.showErrorView(errorMsg: error, retry: retryClosure)
-            //self?.viewModelDidError(error: error)
+        
+        viewModel.showErrorView = { [unowned self] (message, retryClosure) in
+            self.showErrorView(errorMsg: message, retry: retryClosure, back: nil)
         }
  
     }
