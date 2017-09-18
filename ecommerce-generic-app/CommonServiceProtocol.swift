@@ -11,7 +11,7 @@ import Foundation
 
 protocol CommonServiceProtocol {
     
-    typealias HomePageCompletionHandler = (Result<HomePage?>) -> ()
+    typealias HomePageCompletionHandler = (Result<HomePageModel?>) -> ()
     func getHomePageData(completion: @escaping HomePageCompletionHandler)
     
 }

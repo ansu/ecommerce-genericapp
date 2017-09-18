@@ -6,6 +6,7 @@ target 'ecommerce-generic-app' do
   use_frameworks!
 
   # Pods for ecommerce-generic-app
+  pod 'ObjectMapper', '~> 2.2'
 
   target 'ecommerce-generic-appTests' do
     inherit! :search_paths
