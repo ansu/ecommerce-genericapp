@@ -14,6 +14,7 @@ class HomePageVC: BaseVC {
     
     @IBOutlet weak var tableView: UITableView! {
         didSet {
+            self.automaticallyAdjustsScrollViewInsets = false
             self.tableView.keyboardDismissMode = UIScrollViewKeyboardDismissMode.interactive
             self.tableView.keyboardDismissMode = UIScrollViewKeyboardDismissMode.onDrag
             tableView.allowsSelection = false
@@ -71,7 +72,6 @@ class HomePageVC: BaseVC {
 extension HomePageVC : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("number of rows \(self.viewModel.content.count)")
         return self.viewModel.content.count
     }
     
