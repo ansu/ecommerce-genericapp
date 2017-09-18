@@ -14,8 +14,7 @@ protocol HomePageViewModelling {
     // MARK: INPUT
     var tableItemTypes: [CellRepresentable.Type] { get }
     var tableViewDataSource: [CellRepresentable] { get }
-    
-    func callHomePageAPI()
+    func screenLoaded() -> Void
     
     //MARK: OUTPUT
     var showErrorView: ((ErrorViewDataType) -> Void)? { get set }
@@ -49,6 +48,10 @@ class HomePageViewModel: HomePageViewModelling {
     init(api: CommonServiceProtocol) {
         self.api = api
   
+    }
+    
+    func screenLoaded() -> Void {
+        self.callHomePageAPI()
     }
     
     func callHomePageAPI(){
