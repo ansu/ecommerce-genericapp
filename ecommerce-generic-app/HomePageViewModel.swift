@@ -20,7 +20,10 @@ class HomePageViewModel: HomePageViewModelling {
     
     //Mark Input
     private(set) var isLoading : Dynamic<Bool> = Dynamic(false)
-    
+    typealias ErrorViewDataType = (String, (() -> (Void))?)
+   
+    var showErrorView: ErrorViewDataType?
+    var retryClosure: (() -> (Void))?
     
     var didUpdate: (() -> Void)?
     var didError: ((Error) -> Void)?
@@ -42,7 +45,11 @@ class HomePageViewModel: HomePageViewModelling {
     }
     
     func callHomePageAPI(){
+       
+        
         self.isLoading.value = true
+        
+        
         self.api.getHomePageData() {[weak self] (result) in
             self?.isLoading.value = false
             switch result {
@@ -51,6 +58,9 @@ class HomePageViewModel: HomePageViewModelling {
                     self?.didUpdate?()
                 case .Error(let error):
                     print(error.description)
+//                    self?.showErrorView?((error.description, retryClosure:{
+//                        self?.callHomePageAPI()
+//                    }))
             }
             
         }
