@@ -21,9 +21,13 @@ class HomePageViewModel: HomePageViewModelling {
     //Mark Input
     private(set) var isLoading : Dynamic<Bool> = Dynamic(false)
     
+    
     var didUpdate: (() -> Void)?
     var didError: ((Error) -> Void)?
    // var didSelectIndex: ((SearchItem) -> Void)?
+    
+    var content :[Content] = [Content]()
+   
     
     //MARK: - Private
     private let api: CommonServiceProtocol
@@ -35,7 +39,23 @@ class HomePageViewModel: HomePageViewModelling {
     //MARK: - Lifeycle
     init(api: CommonServiceProtocol) {
         self.api = api
-       // callSearchAPI()
+    }
+    
+    func callHomePageAPI(){
+        self.isLoading.value = true
+        self.api.getHomePageData() {[weak self] (result) in
+            self?.isLoading.value = false
+            switch result {
+                case .Success(let data):
+                    self?.content = (data?.content!)!
+                    self?.didUpdate?()
+                case .Error(let error):
+                    print(error.description)
+            }
+            
+        }
+        
+        
     }
 
 }

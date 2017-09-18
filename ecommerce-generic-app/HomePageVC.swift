@@ -25,6 +25,11 @@ class HomePageVC: BaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupBinding()
+        viewModel.callHomePageAPI()
+        
+        
+        
         
         // Do any additional setup after loading the view.
     }
@@ -52,6 +57,8 @@ class HomePageVC: BaseVC {
             self?.tableView.reloadData()
         }
         viewModel?.didError  = { [weak self] error in
+            
+           // self?.showErrorView(errorMsg: error, retry: retryClosure)
             //self?.viewModelDidError(error: error)
         }
         
@@ -67,8 +74,8 @@ class HomePageVC: BaseVC {
 extension HomePageVC : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //return self.viewModel.searchViewModels.count
-        return 0
+        print("number of rows \(self.viewModel.content.count) ")
+        return self.viewModel.content.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

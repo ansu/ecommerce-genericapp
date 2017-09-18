@@ -26,7 +26,7 @@ final class Router {
     
    //MARK: - Public
     func start() {
-        let viewModel = HomePageViewModel(api: application.commonServiceAPI)
+        let viewModel = HomePageViewModel(api: application.api)
         let instance = UIStoryboard.mainStoryboard?.instantiateVC(HomePageVC.self)
         instance?.viewModel = viewModel
         self.navigationController = UINavigationController(rootViewController: instance!)
